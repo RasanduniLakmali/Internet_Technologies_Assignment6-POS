@@ -139,7 +139,7 @@ body{
     height: 680px;
     position: absolute;
     left: 285px;
-    top: 40px;
+    top: 65px;
     border-radius: 15px;
     box-shadow: 5px 5px 15px grey;
     background: #eee6e6;
@@ -160,13 +160,13 @@ body{
 #cid_form{
     position: absolute;
     left: 730px;
-    top: 120px;
+    top: 170px;
 }
 #customerTbl{
     width: 700px;
     position: absolute;
     right: 65px;
-    top: 200px;
+    top: 240px;
 }
 #customer_table>th{
     background: #f2a178;
