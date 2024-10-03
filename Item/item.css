@@ -1,0 +1,249 @@
+body{
+    overflow: hidden;
+}
+.navbar{
+    background: white;
+    height: 45px;
+    width: 100vw;
+    box-shadow: 0px 5px 20px grey;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.d-flex{
+    position: absolute;
+    left: 500px;
+    top: 10px;
+}
+#search_field{
+    width: 240px;
+    height: 30px;
+    border-radius: 10px;
+    background: #f5f1f1;
+    border-color: transparent;
+}
+#search_btn{
+    background: #f2a178;
+    color: white;
+    border-color: transparent;
+    width: 80px;
+    border-radius: 10px;
+}
+#user_img{
+    height: 50px;
+    position: absolute;
+    right: 200px;
+    top: -2px;
+    z-index: 12;
+}
+#email{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    z-index: 12;
+}
+
+#sidebar{
+    background: white;
+    color: white;
+    width: 250px;
+    box-shadow: 0px 5px 20px grey;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.icons{
+    position: absolute;
+    left: 40px;
+    height: 30px;
+}
+#home_icon{
+    top: 100px;
+
+}
+
+#home_link{
+    color: black;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-size: 20px;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+}
+#customer_icon{
+    top: 170px;
+
+}
+.links{
+    color: black;
+    position: absolute;
+    font-size: 20px;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    left: 100px;
+    font-weight: 280;
+}
+#customer_link{
+    top: 170px;
+
+
+}
+#item_icon{
+    top: 250px;
+}
+#item_link{
+    top: 250px;
+    color: #f2a178;
+}
+#order_icon{
+    top: 325px;
+}
+#order_link{
+    top: 325px;
+}
+#user_icon{
+    top: 400px;
+    height: 35px;
+}
+#user_link{
+    top: 405px;
+}
+#report_icon{
+    top: 485px;
+}
+#report_link{
+    top: 485px;
+}
+#logout_icon{
+    top: 650px;
+}
+#logout_link{
+    top: 650px;
+}
+#shop_name{
+    width: fit-content;
+    position: absolute;
+    left: 30px;
+    top: 07px;
+    font-size: 30px;
+}
+#first_word{
+    color: #e28a59;
+}
+#second_word{
+    color: black;
+}
+#item_content{
+    width: 1170px;
+    height: 680px;
+    position: absolute;
+    left: 285px;
+    top: 40px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px grey;
+    background: #eee6e6;
+}
+#item_heading {
+    transform: translateY(20px);
+    font-size: 30px;
+
+}
+#item_form{
+    transform: translate(-380px,100px);
+}
+#buttons{
+    transform: translateX(20px);
+}
+#icode_search{
+    width: 300px;
+}
+#icode_form{
+    position: absolute;
+    left: 720px;
+    top: 130px;
+}
+#itemTbl{
+    width: 700px;
+    position: absolute;
+    right: 65px;
+    top: 200px;
+}
+/* Desktop screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+    #item_content {
+        width: 1170px;
+        left: 285px;
+    }
+
+
+}
+
+/* Tablet screens (min-width: 601px and max-width: 1023px) */
+@media (min-width: 601px) and (max-width: 1023px) {
+    #item_content {
+        width: 90%;
+        left: 5%;
+    }
+
+    #sidebar {
+        width: 200px;
+    }
+
+    #search_field {
+        width: 200px;
+    }
+
+    #itemTbl {
+        width: 100%; /* Make table responsive */
+    }
+
+    #icode_search {
+        width: 100%;
+    }
+
+    /* Other tablet-specific styles can be added here */
+}
+
+/* Mobile screens (max-width: 600px) */
+@media (max-width: 600px) {
+    #item_content {
+        width: 100%;
+        left: 0;
+    }
+
+    #sidebar {
+        width: 100px;
+        position: fixed; /* Fixed positioning */
+    }
+
+    .icons {
+        height: 25px; /* Smaller icons */
+    }
+
+    .links {
+        font-size: 16px; /* Smaller text for links */
+    }
+
+    #buttons {
+        display: flex; /* Flexbox for button layout */
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+        transform: translateX(0); /* Reset transform */
+    }
+
+    #itemTbl {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    #icode_search {
+        width: 90%;
+        margin: auto;
+    }
+
+    #user_img,
+    #email {
+        display: none; /* Hide user image and email on mobile */
+    }
+}
