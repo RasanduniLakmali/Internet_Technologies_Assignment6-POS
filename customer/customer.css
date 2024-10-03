@@ -1,0 +1,368 @@
+body{
+    overflow: hidden;
+}
+.navbar{
+    background: white;
+    height: 45px;
+    width: 100vw;
+    box-shadow: 0px 5px 20px grey;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.d-flex{
+    position: absolute;
+    left: 500px;
+    top: 10px;
+}
+.form-control{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background: #f5f1f1;
+    border-color: transparent;
+}
+#search_btn{
+    background: #f2a178;
+    color: white;
+    border-color: transparent;
+    width: 80px;
+    border-radius: 10px;
+}
+#user_img{
+    height: 50px;
+    position: absolute;
+    right: 200px;
+    top: -2px;
+    z-index: 12;
+}
+#email{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    z-index: 12;
+}
+#sidebar{
+    background: white;
+    color: white;
+    width: 250px;
+    box-shadow: 0px 5px 20px grey;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.icons{
+    position: absolute;
+    left: 40px;
+    height: 30px;
+}
+#home_icon{
+    top: 100px;
+
+}
+
+#home_link{
+    color: black;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-size: 20px;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 280;
+}
+#customer_icon{
+    top: 170px;
+
+}
+.links{
+    color: black;
+    position: absolute;
+    font-size: 20px;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    left: 100px;
+    font-weight: 280;
+}
+#customer_link{
+    top: 170px;
+    color: #f2a178;
+
+}
+#item_icon{
+    top: 250px;
+}
+#item_link{
+
+    top: 250px;
+}
+#order_icon{
+    top: 325px;
+}
+#order_link{
+    top: 325px;
+}
+#user_icon{
+    top: 400px;
+    height: 35px;
+}
+#user_link{
+    top: 405px;
+}
+#report_icon{
+    top: 485px;
+}
+#report_link{
+    top: 485px;
+}
+#logout_icon{
+    top: 650px;
+}
+#logout_link{
+    top: 650px;
+}
+#shop_name{
+    width: fit-content;
+    position: absolute;
+    left: 30px;
+    top: 06px;
+    font-size: 30px;
+}
+#first_word{
+    color: #e28a59;
+}
+#second_word{
+    color: black;
+}
+#home_content{
+    width: 1170px;
+    height: 680px;
+    position: absolute;
+    left: 285px;
+    top: 40px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px grey;
+    background: #eee6e6;
+}
+#customer_form{
+    transform: translate(-380px,100px);
+}
+#buttons{
+    transform: translateX(20px);
+}
+#cu_heading{
+    transform: translateY(20px);
+    font-size: 30px;
+}
+#cid_search{
+    width: 250px;
+}
+#cid_form{
+    position: absolute;
+    left: 730px;
+    top: 120px;
+}
+#customerTbl{
+    width: 700px;
+    position: absolute;
+    right: 65px;
+    top: 200px;
+}
+#customer_table>th{
+    background: #f2a178;
+}
+@media (max-width: 1024px) {
+    /* Adjust layout for smaller laptops */
+    #home_content {
+        width: 850px;
+    }
+
+    #sidebar {
+        width: 180px;
+    }
+
+    .links {
+        font-size: 14px;
+        left: 70px;
+    }
+
+    .icons {
+        left: 20px;
+    }
+
+    #customer_form {
+        transform: translate(-150px, 100px);
+    }
+
+    #cid_search {
+        width: 180px;
+    }
+
+    #customerTbl {
+        width: 95%;
+    }
+
+    #email, #user_img {
+        display: none;
+    }
+}
+/* Tablet landscape (between 768px and 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    #home_content {
+        width: 80%;
+        left: 200px;
+        top: 50px;
+    }
+
+    #sidebar {
+        width: 180px;
+    }
+
+    .icons {
+        left: 20px;
+    }
+
+    .links {
+        font-size: 14px;
+        left: 60px;
+    }
+
+    #shop_name {
+        font-size: 24px;
+        left: 10px;
+    }
+
+    #user_img, #email {
+        right: 60px;
+        top: 5px;
+        height: 40px;
+    }
+
+    #cid_form {
+        right: 30px;
+        top: 100px;
+    }
+
+    #customerTbl {
+        width: 85%;
+        right: 50px;
+        top: 250px;
+    }
+
+    #customer_form {
+        transform: translate(-100px, 100px);
+    }
+}
+
+/* Tablet portrait (between 600px and 768px) */
+@media (max-width: 768px) and (min-width: 600px) {
+    #home_content {
+        width: 90%;
+        left: 180px;
+        top: 50px;
+    }
+
+    #sidebar {
+        width: 150px;
+    }
+
+    .icons {
+        left: 10px;
+    }
+
+    .links {
+        font-size: 12px;
+        left: 50px;
+    }
+
+    #shop_name {
+        font-size: 20px;
+        left: 10px;
+    }
+
+    #user_img, #email {
+        display: none;
+    }
+
+    #cid_form {
+        left: 20px;
+        top: 90px;
+    }
+
+    #customerTbl {
+        width: 95%;
+        right: 20px;
+        top: 230px;
+    }
+
+    #customer_form {
+        transform: translate(-50px, 90px);
+    }
+
+    #buttons {
+        transform: translateX(0);
+    }
+}
+/* Mobile screens (max-width: 600px) */
+@media (max-width: 600px) {
+    /* Main content area */
+    #home_content {
+        width: 100%;
+        left: 0;
+        top: 40px;
+        padding: 15px;
+    }
+
+    /* Sidebar adjustments */
+    #sidebar {
+        width: 120px;
+    }
+
+    .icons {
+        left: 5px;
+    }
+
+    .links {
+        font-size: 12px;
+        left: 45px;
+    }
+
+    #shop_name {
+        font-size: 18px;
+        left: 5px;
+    }
+
+    /* Hide user image and email on mobile */
+    #user_img, #email {
+        display: none;
+    }
+
+    /* Form and buttons */
+    #customer_form {
+        width: 100%;
+        transform: translate(0, 80px);
+    }
+
+    #buttons {
+        text-align: center;
+        transform: translateX(0);
+    }
+
+    /* Customer table adjustments */
+    #customerTbl {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 50px;
+    }
+
+    /* Customer ID search */
+    #cid_search {
+        width: 100%;
+    }
+
+    #cid_form {
+        width: 90%;
+        left: 10px;
+        top: 70px;
+    }
+}
