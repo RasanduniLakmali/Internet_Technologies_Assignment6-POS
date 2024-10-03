@@ -1,0 +1,129 @@
+.form-control{
+    width: 270px;
+    height: 25px;
+
+}
+#cover{
+    height: 230px;
+    width: 340px;
+
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    box-shadow: 2px 2px 15px grey;
+}
+#login_btn{
+    width: 270px;
+    height: 28px;
+    position: absolute;
+    top: 185px;
+    left: 30px;
+    border-radius: 5px;
+    background: #e28a59;
+    color: white;
+    border-color: transparent;
+}
+.mb-2{
+    position: absolute;
+    left: 30px;
+    top: 110px;
+}
+.mb-3{
+    position: absolute;
+    left: 30px;
+    top: 50px;
+}
+.form-label{
+    font-size: 13px;
+    color: #e28a59;
+}
+#heading1{
+    position: absolute;
+    top: 10px;
+    left: 125px;
+    font-size: 25px;
+    color: #e28a59;
+    font-weight: 600;
+}
+#logo{
+    height: 140px;
+    position: absolute;
+    left: 660px;
+    top: 110px;
+}
+/* Responsive styles for laptops (1024px) */
+@media (max-width: 1024px) {
+    #cover {
+        width: 320px;
+        height: 220px;
+    }
+
+    #logo {
+        width: 200px;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 80px;
+    }
+
+    #login_btn {
+        top: 175px;
+        left: 25px;
+    }
+
+    .mb-3 {
+        top: 50px;
+        left: 25px;
+    }
+
+    .mb-2 {
+        top: 110px;
+        left: 25px;
+    }
+
+    #heading1 {
+        left: 115px;
+        font-size: 24px;
+    }
+}
+/* Responsive styles for tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #cover {
+        width: 300px; /* Slightly reduce the width */
+        height: 210px;
+    }
+
+    #logo {
+        width: 180px; /* Adjust the logo width */
+        height: auto; /* Maintain aspect ratio */
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70px; /* Adjust the top position */
+    }
+
+    #login_btn {
+        width: 270px; /* Keep the button size consistent */
+        top: 165px;
+        left: 15px;
+    }
+
+    .mb-3 {
+        top: 40px; /* Adjust for proper alignment */
+        left: 15px;
+    }
+
+    .mb-2 {
+        top: 90px;
+        left: 15px;
+    }
+
+    #heading1 {
+        left: 100px; /* Center the heading more effectively */
+        font-size: 22px; /* Adjust the font size for tablets */
+    }
+}
+
