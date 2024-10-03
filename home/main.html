@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/assets/style/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+<main>
+    <section id="home_page">
+
+     <section>
+        <nav class="navbar">
+            <h4 id="shop_name"><span id="first_word">Cozy</span><span id="second_word">Coffee</span></h4>
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button id="search_btn" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <div>
+           <img src="/assets/images/user_img.png" id="user_img">
+            <a href="#">
+               <span id="email">cozycoffee@gmail.com</span>
+            </a>
+        </div>
+     </section>
+
+        <aside id="sidebar">
+           <div>
+               <img src="/assets/images/home_icon.png" id="home_icon" class="icons">
+
+               <a href="../home/main.html">
+                   <h6 id="home_link">Home</h6>
+               </a>
+
+           </div>
+
+            <div>
+                <img src="/assets/images/customer_icon.png" id="customer_icon" class="icons">
+                <a href="../customer/customer.html">
+                <h6 id="customer_link" class="links">Customer</h6>
+                </a>
+            </div>
+
+            <div>
+                <img src="/assets/images/item_icon.png" id="item_icon" class="icons">
+                <a href="../Item/item.html">
+                <h6 id="item_link" class="links" >Items</h6>
+                </a>
+            </div>
+
+            <div>
+                <img src="/assets/images/order_icon.png" id="order_icon" class="icons">
+                <a href="../order/order.html">
+                <h6 id="order_link" class="links" >Orders</h6>
+                </a>
+            </div>
+
+            <div>
+                <img src="/assets/images/user_icon.png" id="user_icon" class="icons">
+                <a href="../user/user.html">
+                <h6 id="user_link" class="links" >User</h6>
+                </a>
+            </div>
+
+            <div>
+                <img src="/assets/images/report_icon.png" id="report_icon" class="icons">
+                <a href="../reports/reports.html">
+                <h6 id="report_link" class="links" >Reports</h6>
+                </a>
+            </div>
+
+            <div>
+                <img src="/assets/images/logout_icon.png" id="logout_icon" class="icons">
+
+                <h6 id="logout_link" class="links" >Log out</h6>
+
+            </div>
+        </aside>
+
+        <section id="home_content">
+
+                <div class="card-body" style="width: 18rem;">
+                    <h5 class="card-title" id="card1T1">Customers</h5>
+                    <h6 class="card-subtitle" id="card1T2">10</h6>
+                </div>
+
+            <div class="card-body" style="width: 18rem;">
+                <h5 class="card-title" id="card2T1">Items</h5>
+                <h6 class="card-subtitle" id="card2T2">20</h6>
+            </div>
+
+            <div class="card-body" style="width: 18rem;">
+                <h5 class="card-title" id="card3T1">Orders</h5>
+                <h6 class="card-subtitle" id="card3T2">10</h6>
+            </div>
+
+        </section>
+    </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
