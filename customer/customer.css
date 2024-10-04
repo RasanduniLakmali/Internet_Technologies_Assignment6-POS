@@ -171,198 +171,232 @@ body{
 #customer_table>th{
     background: #f2a178;
 }
-@media (max-width: 1024px) {
-    /* Adjust layout for smaller laptops */
+@media (max-width: 1440px) {
+    #customerTbl {
+        left: 750px;
+        width: 600px;
+    }
+
     #home_content {
-        width: 850px;
-    }
-
-    #sidebar {
-        width: 180px;
-    }
-
-    .links {
-        font-size: 14px;
-        left: 70px;
-    }
-
-    .icons {
-        left: 20px;
+        width: 1120px;
     }
 
     #customer_form {
-        transform: translate(-150px, 100px);
+        transform: translate(-320px, 120px);
     }
-
-    #cid_search {
-        width: 180px;
+}
+@media all and (max-width: 1024px){
+    #navigation{
+        width: 1024px;
     }
-
-    #customerTbl {
-        width: 95%;
+    #home_content{
+        width: 750px;
     }
-
-    #email, #user_img {
+    #customer_form{
+        width: 300px;
+        height: 375px;
+        transform: translate(10px,30px);
+    }
+    #cid_form{
+        top: 530px;
+        left: 500px;
+    }
+    #buttons{
+        transform: translate(15px,-25px);
+    }
+    #customerTbl>tbody>tr:nth-child(3){
         display: none;
+    }
+    #customerTbl>tbody>tr:nth-child(4){
+        display: none;
+    }
+    #customerTbl>tbody>tr:nth-child(5){
+        display: none;
+    }
+    #customerTbl>tbody>tr:nth-child(6){
+        display: none;
+    }
+    #customerTbl>tbody>tr:nth-child(7){
+        display: none;
+    }
+    #customerTbl>tbody>tr:nth-child(8){
+        display: none;
+    }
+    #customerTbl{
+        top: 590px;
+        left: 360px;
+    }
+    .d-flex{
+        left: 300px;
+    }
+    #logo_field{
+        position: absolute;
+        right: 50px;
+        top: 2px;
+    }
+}
+@media all and (max-width: 768px) {
+    #home_content{
+        width: 300px;
     }
 }
 /* Tablet landscape (between 768px and 1024px) */
-@media (max-width: 1024px) and (min-width: 768px) {
-    #home_content {
-        width: 80%;
-        left: 200px;
-        top: 50px;
-    }
+/*@media (max-width: 1024px) and (min-width: 768px) {*/
+/*    #home_content {*/
+/*        width: 80%;*/
+/*        left: 200px;*/
+/*        top: 50px;*/
+/*    }*/
 
-    #sidebar {
-        width: 180px;
-    }
+/*    #sidebar {*/
+/*        width: 180px;*/
+/*    }*/
 
-    .icons {
-        left: 20px;
-    }
+/*    .icons {*/
+/*        left: 20px;*/
+/*    }*/
 
-    .links {
-        font-size: 14px;
-        left: 60px;
-    }
+/*    .links {*/
+/*        font-size: 14px;*/
+/*        left: 60px;*/
+/*    }*/
 
-    #shop_name {
-        font-size: 24px;
-        left: 10px;
-    }
+/*    #shop_name {*/
+/*        font-size: 24px;*/
+/*        left: 10px;*/
+/*    }*/
 
-    #user_img, #email {
-        right: 60px;
-        top: 5px;
-        height: 40px;
-    }
+/*    #user_img, #email {*/
+/*        right: 60px;*/
+/*        top: 5px;*/
+/*        height: 40px;*/
+/*    }*/
 
-    #cid_form {
-        right: 30px;
-        top: 100px;
-    }
+/*    #cid_form {*/
+/*        right: 30px;*/
+/*        top: 100px;*/
+/*    }*/
 
-    #customerTbl {
-        width: 85%;
-        right: 50px;
-        top: 250px;
-    }
+/*    #customerTbl {*/
+/*        width: 85%;*/
+/*        right: 50px;*/
+/*        top: 250px;*/
+/*    }*/
 
-    #customer_form {
-        transform: translate(-100px, 100px);
-    }
-}
+/*    #customer_form {*/
+/*        transform: translate(-100px, 100px);*/
+/*    }*/
+/*}*/
 
-/* Tablet portrait (between 600px and 768px) */
-@media (max-width: 768px) and (min-width: 600px) {
-    #home_content {
-        width: 90%;
-        left: 180px;
-        top: 50px;
-    }
+/*!* Tablet portrait (between 600px and 768px) *!*/
+/*@media (max-width: 768px) and (min-width: 600px) {*/
+/*    #home_content {*/
+/*        width: 90%;*/
+/*        left: 180px;*/
+/*        top: 50px;*/
+/*    }*/
 
-    #sidebar {
-        width: 150px;
-    }
+/*    #sidebar {*/
+/*        width: 150px;*/
+/*    }*/
 
-    .icons {
-        left: 10px;
-    }
+/*    .icons {*/
+/*        left: 10px;*/
+/*    }*/
 
-    .links {
-        font-size: 12px;
-        left: 50px;
-    }
+/*    .links {*/
+/*        font-size: 12px;*/
+/*        left: 50px;*/
+/*    }*/
 
-    #shop_name {
-        font-size: 20px;
-        left: 10px;
-    }
+/*    #shop_name {*/
+/*        font-size: 20px;*/
+/*        left: 10px;*/
+/*    }*/
 
-    #user_img, #email {
-        display: none;
-    }
+/*    #user_img, #email {*/
+/*        display: none;*/
+/*    }*/
 
-    #cid_form {
-        left: 20px;
-        top: 90px;
-    }
+/*    #cid_form {*/
+/*        left: 20px;*/
+/*        top: 90px;*/
+/*    }*/
 
-    #customerTbl {
-        width: 95%;
-        right: 20px;
-        top: 230px;
-    }
+/*    #customerTbl {*/
+/*        width: 95%;*/
+/*        right: 20px;*/
+/*        top: 230px;*/
+/*    }*/
 
-    #customer_form {
-        transform: translate(-50px, 90px);
-    }
+/*    #customer_form {*/
+/*        transform: translate(-50px, 90px);*/
+/*    }*/
 
-    #buttons {
-        transform: translateX(0);
-    }
-}
-/* Mobile screens (max-width: 600px) */
-@media (max-width: 600px) {
-    /* Main content area */
-    #home_content {
-        width: 100%;
-        left: 0;
-        top: 40px;
-        padding: 15px;
-    }
+/*    #buttons {*/
+/*        transform: translateX(0);*/
+/*    }*/
+/*}*/
+/*!* Mobile screens (max-width: 600px) *!*/
+/*@media (max-width: 600px) {*/
+/*    !* Main content area *!*/
+/*    #home_content {*/
+/*        width: 100%;*/
+/*        left: 0;*/
+/*        top: 40px;*/
+/*        padding: 15px;*/
+/*    }*/
 
-    /* Sidebar adjustments */
-    #sidebar {
-        width: 120px;
-    }
+/*    !* Sidebar adjustments *!*/
+/*    #sidebar {*/
+/*        width: 120px;*/
+/*    }*/
 
-    .icons {
-        left: 5px;
-    }
+/*    .icons {*/
+/*        left: 5px;*/
+/*    }*/
 
-    .links {
-        font-size: 12px;
-        left: 45px;
-    }
+/*    .links {*/
+/*        font-size: 12px;*/
+/*        left: 45px;*/
+/*    }*/
 
-    #shop_name {
-        font-size: 18px;
-        left: 5px;
-    }
+/*    #shop_name {*/
+/*        font-size: 18px;*/
+/*        left: 5px;*/
+/*    }*/
 
-    /* Hide user image and email on mobile */
-    #user_img, #email {
-        display: none;
-    }
+/*    !* Hide user image and email on mobile *!*/
+/*    #user_img, #email {*/
+/*        display: none;*/
+/*    }*/
 
-    /* Form and buttons */
-    #customer_form {
-        width: 100%;
-        transform: translate(0, 80px);
-    }
+/*    !* Form and buttons *!*/
+/*    #customer_form {*/
+/*        width: 100%;*/
+/*        transform: translate(0, 80px);*/
+/*    }*/
 
-    #buttons {
-        text-align: center;
-        transform: translateX(0);
-    }
+/*    #buttons {*/
+/*        text-align: center;*/
+/*        transform: translateX(0);*/
+/*    }*/
 
-    /* Customer table adjustments */
-    #customerTbl {
-        width: 100%;
-        font-size: 12px;
-        margin-top: 50px;
-    }
+/*    !* Customer table adjustments *!*/
+/*    #customerTbl {*/
+/*        width: 100%;*/
+/*        font-size: 12px;*/
+/*        margin-top: 50px;*/
+/*    }*/
 
-    /* Customer ID search */
-    #cid_search {
-        width: 100%;
-    }
+/*    !* Customer ID search *!*/
+/*    #cid_search {*/
+/*        width: 100%;*/
+/*    }*/
 
-    #cid_form {
-        width: 90%;
-        left: 10px;
-        top: 70px;
-    }
-}
+/*    #cid_form {*/
+/*        width: 90%;*/
+/*        left: 10px;*/
+/*        top: 70px;*/
+/*    }*/
+/*}*/

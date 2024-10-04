@@ -1,7 +1,8 @@
 body{
     overflow: hidden;
 }
-.navbar{
+
+#navigation{
     background: white;
     height: 45px;
     width: 100vw;
@@ -56,19 +57,25 @@ body{
     background: white;
     color: white;
     width: 250px;
+    height: 900px;
     box-shadow: 0px 5px 20px grey;
     position: absolute;
-    top: 0;
-    bottom: 0;
+    /*top: 0;*/
+    /*bottom: 0;*/
 }
 #home_content{
     width: 1170px;
-    height: 680px;
+    height: 710px;
     position: absolute;
     left: 280px;
     top: 60px;
     border-radius: 15px;
     box-shadow: 5px 5px 15px grey;
+    background: #eee6e6;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 .icons{
     position: absolute;
@@ -136,11 +143,7 @@ body{
 #logout_link{
     top: 650px;
 }
-#home_content{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    background: #eee6e6;
-}
+
 
 .card-body{
     height: 200px;
@@ -196,4 +199,55 @@ body{
 #home_content>div:nth-child(3){
     margin-top: 80px;
     margin-left: 40px;
+}
+@media all and (max-width: 1440px) {
+
+}
+@media all and (max-width: 1024px) {
+    #home_page{
+        height: 801px;
+        width: 1024px;
+    }
+    #navigation{
+        width: 1024px;
+    }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    }
+    .grid>div:first-child{
+        transform: translate(130px,-40px);
+    }
+    .grid>div:nth-child(2){
+        transform: translate(130px,-20px);
+    }
+    .grid>div:nth-child(3){
+        transform: translate(130px,10px);
+    }
+    .d-flex{
+        left: 250px;
+    }
+    #home_content{
+        width: 700px;
+    }
+}
+@media all and (max-width: 768px) {
+    #sidebar{
+        height: 1500px;
+    }
+
+    #home_content{
+
+    }
+}
+@media all and (max-width: 320px) {
+    .d-flex{
+        display: none;
+    }
+    #sidebar{
+        display: none;
+    }
+    #home_icon{
+        display: none;
+    }
 }
