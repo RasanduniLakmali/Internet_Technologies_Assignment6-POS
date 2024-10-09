@@ -1,0 +1,39 @@
+#first_word{
+    color: #f2a178;
+}
+
+body {
+    overflow-x: hidden;
+}
+.navbar .nav-link:hover{
+    color: #f2a178;
+}
+.navbar .nav-link{
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#item_content{
+    background: #eee6e6;
+}
+.card{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#customerTbl{
+    margin-top: 5px;
+}
+.d-flex{
+    margin-left: 10px;
+}
+#item_heading{
+    margin-top: 20px;
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@media all and (max-width: 1024px){
+    .navbar .nav-link{
+        padding-left: 3px;
+    }
+}
