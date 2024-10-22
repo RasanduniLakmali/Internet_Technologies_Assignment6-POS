@@ -58,8 +58,11 @@
 }
 #logo{
     height: 140px;
-    margin-left: 650px;
+    margin-left: 740px;
     margin-top: 120px;
+}
+#customer_page{
+    background: linear-gradient(180deg,#e28a59,white);
 }
 @media all and (max-width: 1440px) {
     #logo{
